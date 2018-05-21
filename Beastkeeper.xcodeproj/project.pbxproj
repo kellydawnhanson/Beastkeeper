@@ -14,6 +14,15 @@
 		2313804720A75B5A008A47D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2313804520A75B5A008A47D4 /* LaunchScreen.storyboard */; };
 		2313805220A75B5A008A47D4 /* BeastkeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313805120A75B5A008A47D4 /* BeastkeeperTests.swift */; };
 		2313805D20A75B5B008A47D4 /* BeastkeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313805C20A75B5B008A47D4 /* BeastkeeperUITests.swift */; };
+		233D4C8E20B328B1002542C7 /* Keeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D4C8D20B328B1002542C7 /* Keeper.swift */; };
+		233D4C9020B328EF002542C7 /* Enclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D4C8F20B328EF002542C7 /* Enclosure.swift */; };
+		233D4C9220B32A9E002542C7 /* Farm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D4C9120B32A9E002542C7 /* Farm.swift */; };
+		233D4C9620B33042002542C7 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D4C9520B33042002542C7 /* Classification.swift */; };
+		233D4C9820B3306F002542C7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D4C9720B3306F002542C7 /* Event.swift */; };
+		233D4C9A20B34532002542C7 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D4C9920B34532002542C7 /* Reminder.swift */; };
+		233D4C9C20B34558002542C7 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D4C9B20B34558002542C7 /* Schedule.swift */; };
+		2398380420ACA35A00E0A7C4 /* Beastkeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398380320ACA35A00E0A7C4 /* Beastkeeper.swift */; };
+		23B4BDB720AC9AFC00F93EA9 /* Beast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4BDB620AC9AFC00F93EA9 /* Beast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,15 @@
 		2313805820A75B5A008A47D4 /* BeastkeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeastkeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2313805C20A75B5B008A47D4 /* BeastkeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastkeeperUITests.swift; sourceTree = "<group>"; };
 		2313805E20A75B5B008A47D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		233D4C8D20B328B1002542C7 /* Keeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keeper.swift; sourceTree = "<group>"; };
+		233D4C8F20B328EF002542C7 /* Enclosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enclosure.swift; sourceTree = "<group>"; };
+		233D4C9120B32A9E002542C7 /* Farm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farm.swift; sourceTree = "<group>"; };
+		233D4C9520B33042002542C7 /* Classification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		233D4C9720B3306F002542C7 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		233D4C9920B34532002542C7 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		233D4C9B20B34558002542C7 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		2398380320ACA35A00E0A7C4 /* Beastkeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beastkeeper.swift; sourceTree = "<group>"; };
+		23B4BDB620AC9AFC00F93EA9 /* Beast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +115,18 @@
 		2313803B20A75B47008A47D4 /* Beastkeeper */ = {
 			isa = PBXGroup;
 			children = (
-				2313803C20A75B47008A47D4 /* AppDelegate.swift */,
 				2313803E20A75B47008A47D4 /* ViewController.swift */,
 				2313804020A75B47008A47D4 /* Main.storyboard */,
-				2313804320A75B5A008A47D4 /* Assets.xcassets */,
-				2313804520A75B5A008A47D4 /* LaunchScreen.storyboard */,
+				2398380320ACA35A00E0A7C4 /* Beastkeeper.swift */,
+				23B4BDB620AC9AFC00F93EA9 /* Beast.swift */,
+				233D4C9520B33042002542C7 /* Classification.swift */,
+				233D4C8D20B328B1002542C7 /* Keeper.swift */,
+				233D4C9120B32A9E002542C7 /* Farm.swift */,
+				233D4C8F20B328EF002542C7 /* Enclosure.swift */,
+				233D4C9B20B34558002542C7 /* Schedule.swift */,
+				233D4C9720B3306F002542C7 /* Event.swift */,
+				233D4C9920B34532002542C7 /* Reminder.swift */,
+				233D4C8C20B326DD002542C7 /* Supporting Files */,
 				2313804820A75B5A008A47D4 /* Info.plist */,
 			);
 			path = Beastkeeper;
@@ -123,6 +148,16 @@
 				2313805E20A75B5B008A47D4 /* Info.plist */,
 			);
 			path = BeastkeeperUITests;
+			sourceTree = "<group>";
+		};
+		233D4C8C20B326DD002542C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2313803C20A75B47008A47D4 /* AppDelegate.swift */,
+				2313804320A75B5A008A47D4 /* Assets.xcassets */,
+				2313804520A75B5A008A47D4 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +291,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				233D4C9020B328EF002542C7 /* Enclosure.swift in Sources */,
+				233D4C9820B3306F002542C7 /* Event.swift in Sources */,
+				233D4C9C20B34558002542C7 /* Schedule.swift in Sources */,
+				233D4C9220B32A9E002542C7 /* Farm.swift in Sources */,
+				23B4BDB720AC9AFC00F93EA9 /* Beast.swift in Sources */,
+				233D4C9620B33042002542C7 /* Classification.swift in Sources */,
 				2313803F20A75B47008A47D4 /* ViewController.swift in Sources */,
 				2313803D20A75B47008A47D4 /* AppDelegate.swift in Sources */,
+				2398380420ACA35A00E0A7C4 /* Beastkeeper.swift in Sources */,
+				233D4C8E20B328B1002542C7 /* Keeper.swift in Sources */,
+				233D4C9A20B34532002542C7 /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

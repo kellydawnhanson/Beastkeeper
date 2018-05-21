@@ -8,11 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+@IBDesignable
 
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var profileButtonStackView: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
