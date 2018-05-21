@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable
+@IBDesignable //view UI elements in editor
 
 class ViewController: UIViewController {
     
