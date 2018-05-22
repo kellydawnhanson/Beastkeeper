@@ -10,7 +10,6 @@ import Foundation
 
 struct Reminder {
     
-    //let event = sender
     let deadline : Date!
     var completed : Bool = false
     var dismissedWithoutCompletion = false

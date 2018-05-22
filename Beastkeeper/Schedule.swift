@@ -10,7 +10,15 @@ import Foundation
 
 struct Schedule {
     
-    var eventsWithDates : [Event]
-    let eventTypes = ["Innoculation","Checkup","Appointment","Incident","Training","Tasks"]//write corresponding enums
+    //MARK: Public Properties
+    public var eventsWithDates: Dictionary <Event, Date?>
     
+    /*
+    //MARK: Initialization
+    //init(Classification : Classification, name: String?, profilePicture : UIImage)
+    init (eventsWithDates: Dictionary <Event, Date?>) {
+        let self.eventsWithDates = eventsWithDates
+    }
+    */
+
 }

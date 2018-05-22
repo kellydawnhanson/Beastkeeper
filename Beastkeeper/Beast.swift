@@ -6,18 +6,16 @@
 //  Copyright © 2018 Kelly Hanson. All rights reserved.
 //
 
-import Foundation
+import UIKit //MARK: import UIKit
 
-struct Beast {
+class Beast : Classification {
     
-    let BeastID : String!
-    let classification : Classification
-    let name : String!
-    let birthDate : Date!
-    let arrivalDate : Date!
-    var reminders : [Reminder] = []
-    var appointments : Schedule!
+    let classification = Classification ()
+    var name : String?
+    var profilePicture : UIImage?
     
-    //var profilePhoto
+    init(Classification : Classification, name: String?, profilePicture : UIImage) {
+        
+    }
     
 }

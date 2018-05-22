@@ -9,7 +9,7 @@
 import Foundation
 
 //INCOMPLETE IMPLEMENTATION FOR DEMO
-//will need to incorporate classification according to real world animal classification standards
+//would need to incorporate classification according to real world animal classification standards
 
 /* avoid limiting to livestock only, may include work animals, pets and other animals or groups of animals,
  animals introduced for pet control etc. */
@@ -18,7 +18,7 @@ import Foundation
 
 class Classification {
 
-    let classificationType = "Poultry" //improperly included for demo
+    let classificationType = "Chicken" //improperly included for demo
     let innoculationSchedule : Schedule! = nil
 
 }
