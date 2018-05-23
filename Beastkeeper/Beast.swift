@@ -6,7 +6,7 @@
 //  Copyright © 2018 Kelly Hanson. All rights reserved.
 //
 
-import UIKit //MARK: import UIKit
+import UIKit //MARK: import UIKit to accomodate images
 
 class Beast : Classification {
     

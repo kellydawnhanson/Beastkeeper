@@ -8,17 +8,8 @@
 
 import Foundation
 
-struct Schedule {
+class Schedule: Event {
     
-    //MARK: Public Properties
-    public var eventsWithDates: Dictionary <Event, Date?>
+    //MARK:  Public Properties
     
-    /*
-    //MARK: Initialization
-    //init(Classification : Classification, name: String?, profilePicture : UIImage)
-    init (eventsWithDates: Dictionary <Event, Date?>) {
-        let self.eventsWithDates = eventsWithDates
-    }
-    */
-
 }

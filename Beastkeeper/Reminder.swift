@@ -8,11 +8,8 @@
 
 import Foundation
 
-struct Reminder {
+class Reminder: Schedule {
     
-    let deadline : Date!
-    var completed : Bool = false
-    var dismissedWithoutCompletion = false
+    //MARK:  Public Properties
     
-    //func overdue ()
 }
