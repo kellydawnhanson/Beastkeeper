@@ -17,8 +17,8 @@ import Foundation
 //could include links to external resources ie. care and feeding of documents, wikipedia etc.
 
 class Classification {
-
+    
     let classificationType = "Chicken" //improperly included for demo
     let innoculationSchedule : Schedule! = nil
-
+    
 }
