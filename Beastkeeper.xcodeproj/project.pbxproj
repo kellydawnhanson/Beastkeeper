@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2313803D20A75B47008A47D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313803C20A75B47008A47D4 /* AppDelegate.swift */; };
-		2313803F20A75B47008A47D4 /* ProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313803E20A75B47008A47D4 /* ProfilesViewController.swift */; };
+		2313803F20A75B47008A47D4 /* ProfileCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313803E20A75B47008A47D4 /* ProfileCollectionViewController.swift */; };
 		2313804220A75B47008A47D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2313804020A75B47008A47D4 /* Main.storyboard */; };
 		2313804420A75B5A008A47D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2313804320A75B5A008A47D4 /* Assets.xcassets */; };
 		2313804720A75B5A008A47D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2313804520A75B5A008A47D4 /* LaunchScreen.storyboard */; };
@@ -46,7 +46,7 @@
 /* Begin PBXFileReference section */
 		2313803920A75B47008A47D4 /* Beastkeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beastkeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2313803C20A75B47008A47D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2313803E20A75B47008A47D4 /* ProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesViewController.swift; sourceTree = "<group>"; };
+		2313803E20A75B47008A47D4 /* ProfileCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewController.swift; sourceTree = "<group>"; };
 		2313804120A75B47008A47D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2313804320A75B5A008A47D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2313804620A75B5A008A47D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				2313804020A75B47008A47D4 /* Main.storyboard */,
-				2313803E20A75B47008A47D4 /* ProfilesViewController.swift */,
+				2313803E20A75B47008A47D4 /* ProfileCollectionViewController.swift */,
 				23E69BD520B63F59005AF0EB /* ProfileDetailViewController.swift */,
 				2398380320ACA35A00E0A7C4 /* Beastkeeper.swift */,
 				233D4C9520B33042002542C7 /* Classification.swift */,
@@ -301,7 +301,7 @@
 				233D4C9220B32A9E002542C7 /* Farm.swift in Sources */,
 				23B4BDB720AC9AFC00F93EA9 /* Beast.swift in Sources */,
 				233D4C9620B33042002542C7 /* Classification.swift in Sources */,
-				2313803F20A75B47008A47D4 /* ProfilesViewController.swift in Sources */,
+				2313803F20A75B47008A47D4 /* ProfileCollectionViewController.swift in Sources */,
 				2313803D20A75B47008A47D4 /* AppDelegate.swift in Sources */,
 				2398380420ACA35A00E0A7C4 /* Beastkeeper.swift in Sources */,
 				233D4C8E20B328B1002542C7 /* Keeper.swift in Sources */,
