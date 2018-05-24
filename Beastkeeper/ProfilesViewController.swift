@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable //view UI elements in editor
 
-class ViewController: UIViewController {
+class ProfilesViewController: UIViewController {
     
     @IBOutlet weak var profileButtonStackView: UIStackView!
     
