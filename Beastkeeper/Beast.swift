@@ -14,7 +14,7 @@ class Beast {
     var name : String?
     var profilePicture : UIImage?
     
-    init(classification : Classification, name: String?, profilePicture : UIImage) {
+    init(classification : Classification, name: String?, profilePicture : UIImage?) {
         
         self.classification = classification
         self.name = name
