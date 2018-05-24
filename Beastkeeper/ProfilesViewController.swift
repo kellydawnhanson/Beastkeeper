@@ -13,6 +13,12 @@ import UIKit
 class ProfilesViewController: UIViewController {
     
     @IBOutlet weak var profileButtonStackView: UIStackView!
+
+    //create the "Magnificent Chicken" concept placeholder
+    let MagnificentChicken: Classification = Classification (classificationType: "Magnificent Chicken")
+    
+    //make a chicken to test the initializers
+    lazy var chickenGeorge: Beast = Beast (classification: MagnificentChicken, name: "George", profilePicture: <#T##UIImage#>)
     
     override func viewDidLoad() {
         super.viewDidLoad()
