@@ -12,20 +12,45 @@ import UIKit
 
 class ProfileCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    //MARK:  CollectionView and CollectionViewCell Elements
     @IBOutlet var ProfileCollectionView: UICollectionView!
+    
+    @IBAction func profileButton(_ sender: UIButton) {
+    }
     
     //create the "Magnificent Chicken" Classification instance to serve as placeholder for the Classification concept
     //because we've determined that Classification is inherent to the model and the UI
     //but the concept is non-trivial to implement and for the purposes of demonstrating the UI
     //should be represented as simply as possible
+    
     let MagnificentChicken: Classification = Classification (classificationType: "Magnificent Chicken")
     
     //Normally, we would start by loading up some data to populate the collection view but for the demo we've planned
     //to circumvent persistence, so we're just going to retrieve an array of Beasts which we will create
     //to live inside the scope of this view controller
+    
     lazy var UISpecificData = loadUISpecificData ()//returns an array of Magnificient Chickens
     
     //set up profile
+    
+    //MARK:  UICollectionView methods
+    
+    //required method
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return UISpecificData.count
+    }
+    
+    //required method
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collection_cell", for: indexPath) as! ProfileCollectionViewCell
+        
+        //set all of the elements of a cell
+        cell.profileImageView.image = UIImage(named: "George")
+        
+        
+        
+        return cell
+    }
     
     //MARK:  Data methods
     
@@ -54,18 +79,7 @@ class ProfileCollectionViewController: UIViewController, UICollectionViewDelegat
         return Data
     }
     
-    //MARK:  UICollectionView methods
     
-    //required method
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return UISpecificData.count
-    }
-    
-    //required method
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collection_cell", for: indexPath) as! ProfileCollectionViewCell
-        return cell
-    }
     
 }
 

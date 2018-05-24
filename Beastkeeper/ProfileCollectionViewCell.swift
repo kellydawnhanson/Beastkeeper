@@ -10,7 +10,8 @@ import UIKit
 
 class ProfileCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var profileButton: UIButton!
     @IBOutlet weak var profileImageView: UIImageView!
-    
-    
+    @IBOutlet weak var profileNameLabel: UILabel!
+
 }

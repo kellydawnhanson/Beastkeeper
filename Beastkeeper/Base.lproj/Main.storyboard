@@ -32,28 +32,43 @@
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WcI-pl-lUe">
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOo-dA-Jtm">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="profileButton:" destination="jh6-Bi-o6b" eventType="touchUpInside" id="4KW-YC-yc4"/>
+                                                <segue destination="y0h-lg-waY" kind="showDetail" id="0AC-7e-5ck"/>
+                                            </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZLD-dR-Y4s">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4m-zc-8Nu">
+                                            <rect key="frame" x="29" y="69" width="0.0" height="0.0"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <outlet property="profileImageView" destination="WcI-pl-lUe" id="D1H-yz-bAa"/>
-                                    <segue destination="y0h-lg-waY" kind="showDetail" id="G6h-8z-hPX"/>
+                                    <outlet property="profileButton" destination="tOo-dA-Jtm" id="dkl-m2-If4"/>
+                                    <outlet property="profileImageView" destination="ZLD-dR-Y4s" id="92p-jn-4aW"/>
+                                    <outlet property="profileNameLabel" destination="E4m-zc-8Nu" id="iPQ-XV-n4F"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="jh6-Bi-o6b" id="YS8-LN-sSL"/>
-                            <outlet property="delegate" destination="jh6-Bi-o6b" id="ABn-LY-5Tn"/>
+                            <outlet property="dataSource" destination="jh6-Bi-o6b" id="Q67-PN-QeM"/>
+                            <outlet property="delegate" destination="jh6-Bi-o6b" id="NnY-g0-mYf"/>
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="My Magnificent Chickens" id="px4-gy-gvS"/>
                     <connections>
                         <outlet property="ProfileCollectionView" destination="DXe-nd-xXi" id="C2c-SV-nrh"/>
-                        <outlet property="collectionView" destination="DXe-nd-xXi" id="V8t-Ln-lUw"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ul7-Kw-CvO" userLabel="First Responder" sceneMemberID="firstResponder"/>
