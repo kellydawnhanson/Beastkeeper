@@ -16,9 +16,13 @@ import Foundation
 
 //could include links to external resources ie. care and feeding of documents, wikipedia etc.
 
-class Classification {
+struct Classification {
     
-    let classificationType = "Chicken" //improperly included for demo
+    var classificationType = ""
     let innoculationSchedule : Schedule! = nil
+    
+    init (classificationType: String){
+        self.classificationType = classificationType
+    }
     
 }
