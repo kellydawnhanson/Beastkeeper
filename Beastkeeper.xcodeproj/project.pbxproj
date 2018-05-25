@@ -22,6 +22,8 @@
 		233D4C9A20B34532002542C7 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D4C9920B34532002542C7 /* Reminder.swift */; };
 		233D4C9C20B34558002542C7 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D4C9B20B34558002542C7 /* Schedule.swift */; };
 		2381B6D020B7018300DCD8D2 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2381B6CF20B7018300DCD8D2 /* ProfileCollectionViewCell.swift */; };
+		2381B6D820B7BA8C00DCD8D2 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2381B6D720B7BA8C00DCD8D2 /* ScheduleTableViewController.swift */; };
+		2381B6DA20B7BB1200DCD8D2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2381B6D920B7BB1200DCD8D2 /* EventViewController.swift */; };
 		2398380420ACA35A00E0A7C4 /* Beastkeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398380320ACA35A00E0A7C4 /* Beastkeeper.swift */; };
 		23B4BDB720AC9AFC00F93EA9 /* Beast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4BDB620AC9AFC00F93EA9 /* Beast.swift */; };
 		23E69BD620B63F59005AF0EB /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E69BD520B63F59005AF0EB /* ProfileDetailViewController.swift */; };
@@ -66,6 +68,8 @@
 		233D4C9920B34532002542C7 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		233D4C9B20B34558002542C7 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		2381B6CF20B7018300DCD8D2 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		2381B6D720B7BA8C00DCD8D2 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
+		2381B6D920B7BB1200DCD8D2 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		2398380320ACA35A00E0A7C4 /* Beastkeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beastkeeper.swift; sourceTree = "<group>"; };
 		23B4BDB620AC9AFC00F93EA9 /* Beast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beast.swift; sourceTree = "<group>"; };
 		23E69BD520B63F59005AF0EB /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				2313803E20A75B47008A47D4 /* ProfileCollectionViewController.swift */,
 				2381B6CF20B7018300DCD8D2 /* ProfileCollectionViewCell.swift */,
 				23E69BD520B63F59005AF0EB /* ProfileDetailViewController.swift */,
+				2381B6D720B7BA8C00DCD8D2 /* ScheduleTableViewController.swift */,
+				2381B6D920B7BB1200DCD8D2 /* EventViewController.swift */,
 				2398380320ACA35A00E0A7C4 /* Beastkeeper.swift */,
 				233D4C9520B33042002542C7 /* Classification.swift */,
 				23B4BDB620AC9AFC00F93EA9 /* Beast.swift */,
@@ -300,8 +306,10 @@
 				233D4C9020B328EF002542C7 /* Enclosure.swift in Sources */,
 				23E69BD620B63F59005AF0EB /* ProfileDetailViewController.swift in Sources */,
 				233D4C9820B3306F002542C7 /* Event.swift in Sources */,
+				2381B6DA20B7BB1200DCD8D2 /* EventViewController.swift in Sources */,
 				233D4C9C20B34558002542C7 /* Schedule.swift in Sources */,
 				233D4C9220B32A9E002542C7 /* Farm.swift in Sources */,
+				2381B6D820B7BA8C00DCD8D2 /* ScheduleTableViewController.swift in Sources */,
 				23B4BDB720AC9AFC00F93EA9 /* Beast.swift in Sources */,
 				233D4C9620B33042002542C7 /* Classification.swift in Sources */,
 				2313803F20A75B47008A47D4 /* ProfileCollectionViewController.swift in Sources */,

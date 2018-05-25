@@ -37,14 +37,14 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <connections>
                                                 <action selector="profileButton:" destination="jh6-Bi-o6b" eventType="touchUpInside" id="4KW-YC-yc4"/>
-                                                <segue destination="y0h-lg-waY" kind="showDetail" id="0AC-7e-5ck"/>
+                                                <segue destination="y0h-lg-waY" kind="showDetail" identifier="showProfileDetails" id="0AC-7e-5ck"/>
                                             </connections>
                                         </button>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZLD-dR-Y4s">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4m-zc-8Nu">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4m-zc-8Nu">
                                             <rect key="frame" x="0.0" y="100" width="100" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -53,7 +53,6 @@
                                         </label>
                                     </subviews>
                                 </view>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="profileButton" destination="tOo-dA-Jtm" id="dkl-m2-If4"/>
                                     <outlet property="profileImageView" destination="ZLD-dR-Y4s" id="92p-jn-4aW"/>
@@ -82,6 +81,16 @@
                     <view key="view" contentMode="scaleToFill" id="dVA-ag-kRz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NP7-zJ-rE9">
+                                <rect key="frame" x="111" y="706" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Innoculation Schedule"/>
+                                <connections>
+                                    <segue destination="oK2-NJ-onS" kind="show" id="QTS-gZ-AMv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XYq-gT-V45"/>
                     </view>
@@ -89,6 +98,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdU-sX-Wq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3620" y="115"/>
+        </scene>
+        <!--Innoculation Schedule-->
+        <scene sceneID="L7e-Vv-oA2">
+            <objects>
+                <tableViewController title="Innoculation Schedule" id="oK2-NJ-onS" customClass="ScheduleTableViewController" customModule="Beastkeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Title" id="91M-ka-zQQ"/>
+                    <connections>
+                        <segue destination="Vqx-VZ-tF4" kind="show" identifier="eventSegue" id="MaH-TT-dCq"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YgV-1x-D2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4349" y="117"/>
+        </scene>
+        <!--Event View Controller-->
+        <scene sceneID="zPW-gS-QSe">
+            <objects>
+                <viewController id="Vqx-VZ-tF4" customClass="EventViewController" customModule="Beastkeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uHO-lO-98l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GvS-mh-ri9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m0n-ad-Ig6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5063" y="117"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q1M-GC-tp0">

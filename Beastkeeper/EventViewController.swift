@@ -1,16 +1,25 @@
 //
-//  ProfileDetailViewController.swift
+//  EventViewController.swift
 //  Beastkeeper
 //
-//  Created by Kelly Hanson on 2018-05-23.
+//  Created by Kelly Hanson on 2018-05-24.
 //  Copyright © 2018 Kelly Hanson. All rights reserved.
 //
 
 import UIKit
 
-class ProfileDetailViewController: UIViewController {
+class EventViewController: UIViewController {
 
-    var data: Data?
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
 
     /*

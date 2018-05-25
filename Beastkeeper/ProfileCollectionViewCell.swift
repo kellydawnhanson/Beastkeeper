@@ -8,6 +8,8 @@
 
 import UIKit
 
+@IBDesignable   
+
 class ProfileCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var profileButton: UIButton!

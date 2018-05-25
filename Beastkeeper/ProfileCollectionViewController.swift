@@ -16,7 +16,13 @@ class ProfileCollectionViewController: UIViewController, UICollectionViewDelegat
     @IBOutlet var ProfileCollectionView: UICollectionView!
     
     @IBAction func profileButton(_ sender: UIButton) {
+        //perform segue
+        
+        
     }
+    
+    
+    //MARK:
     
     //create the "Magnificent Chicken" Classification instance to serve as placeholder for the Classification concept
     //because we've determined that Classification is inherent to the model and the UI
@@ -31,7 +37,6 @@ class ProfileCollectionViewController: UIViewController, UICollectionViewDelegat
     
     lazy var InterfaceSpecificData = loadInterfaceSpecificData ()//returns an array of Magnificient Chickens
     
-    //set up profile
     
     //MARK:  UICollectionView methods
     
@@ -50,11 +55,11 @@ class ProfileCollectionViewController: UIViewController, UICollectionViewDelegat
         //set cell element display
         if let name = beast.name { //MARK: Optional Binding
             cell.profileNameLabel.text = name
-            cell.profileImageView.image = UIImage (named: name)
+            cell.profileImageView.image = UIImage (named: name)//MARK:  fix this nonsense
         }
         return cell
-        
     }
+
     
     //MARK:  Data methods
     
@@ -82,6 +87,23 @@ class ProfileCollectionViewController: UIViewController, UICollectionViewDelegat
         
         return Data
     }
+    
+    //prepare(for:sender)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let data = Data()
+        if let destinationViewController = segue.destination as? ProfileDetailViewController {
+            
+            //sender is the button, nothing else is hooked up to the segue
+            
+            
+            destinationViewController.data = data
+            
+            
+            
+            
+        }
+    }
+    
     
     
     
