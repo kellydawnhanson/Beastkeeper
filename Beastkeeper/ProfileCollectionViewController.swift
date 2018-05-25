@@ -8,17 +8,18 @@
 
 import UIKit
 
-@IBDesignable //view UI elements in editor
+//view UI elements in editor
+
+//MARK:  Scope Variables
+//use beastIndex to hold the index of the
+var beastProfileSelectedIndex: Int = 0
 
 class ProfileCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     //MARK:  CollectionView and CollectionViewCell Elements
     @IBOutlet var ProfileCollectionView: UICollectionView!
-    
     @IBAction func profileButton(_ sender: UIButton) {
-        //perform segue
-        
-        
+        //set an int to hold the index of the
     }
     
     
@@ -50,12 +51,16 @@ class ProfileCollectionViewController: UIViewController, UICollectionViewDelegat
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collection_cell", for: indexPath) as! ProfileCollectionViewCell  //MARK: as! ??
         
-        let beast = InterfaceSpecificData [indexPath.row]
+        let index = indexPath.row
+        let beast = InterfaceSpecificData [index]
         
         //set cell element display
         if let name = beast.name { //MARK: Optional Binding
             cell.profileNameLabel.text = name
             cell.profileImageView.image = UIImage (named: name)//MARK:  fix this nonsense
+            
+            //set the tag on the button so that we have an value we can reference to show which button in the collection was pressed
+            cell.profileButton.tag = index
         }
         return cell
     }
@@ -90,22 +95,22 @@ class ProfileCollectionViewController: UIViewController, UICollectionViewDelegat
     
     //prepare(for:sender)
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let data = Data()
-        if let destinationViewController = segue.destination as? ProfileDetailViewController {
-            
-            //sender is the button, nothing else is hooked up to the segue
-            
-            
-            destinationViewController.data = data
-            
-            
-            
-            
+        //let data = Data()
+        
+        //sender is the button, nothing else is hooked up to the segue
+        if let button = sender as? UIButton {  //MARK:  unwrap and examine, downcast Any?
+            if segue.identifier == "showProfileDetails" {
+                if let destinationViewController = segue.destination as? ProfileDetailViewController {
+                    //reference the button's tag value set in cellForIndexPath
+                    destinationViewController.beast = InterfaceSpecificData [button.tag]
+                    
+                    //destinationViewController.data = data
+                }
+            }
         }
     }
     
     
     
-    
-}
+}//end
 

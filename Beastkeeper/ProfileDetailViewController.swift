@@ -10,9 +10,13 @@ import UIKit
 
 class ProfileDetailViewController: UIViewController {
 
-    var data: Data?
+    //var data: Data?
     
+    var beast: Beast?
 
+    @IBOutlet weak var profileNameLabel: UILabel!
+    @IBOutlet weak var profileImage: UIImageView!
+    
     /*
     // MARK: - Navigation
 
