@@ -8,6 +8,8 @@
 
 import UIKit
 
+//Not implemented - visual placeholder for presentation
+
 class EventViewController: UIViewController {
 
     override func viewDidLoad() {

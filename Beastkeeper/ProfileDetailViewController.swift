@@ -12,6 +12,7 @@ class ProfileDetailViewController: UIViewController {
 
     //var data: Data?
     
+    //Hold the data from the ProfileCollectionViewController prepare for segue method
     var beast: Beast?
 
     @IBOutlet weak var profileNameLabel: UILabel!

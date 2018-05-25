@@ -10,9 +10,6 @@ import UIKit
 
 //view UI elements in editor
 
-//MARK:  Scope Variables
-//use beastIndex to hold the index of the
-var beastProfileSelectedIndex: Int = 0
 
 class ProfileCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
