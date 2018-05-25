@@ -29,7 +29,7 @@ class ProfileCollectionViewController: UIViewController, UICollectionViewDelegat
     //to circumvent persistence, so we're just going to retrieve an array of Beasts which we will create
     //to live inside the scope of this view controller
     
-    lazy var UISpecificData = loadUISpecificData ()//returns an array of Magnificient Chickens
+    lazy var InterfaceSpecificData = loadInterfaceSpecificData ()//returns an array of Magnificient Chickens
     
     //set up profile
     
@@ -37,24 +37,28 @@ class ProfileCollectionViewController: UIViewController, UICollectionViewDelegat
     
     //required method
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return UISpecificData.count
+        return InterfaceSpecificData.count
     }
     
     //required method
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collection_cell", for: indexPath) as! ProfileCollectionViewCell
         
-        //set all of the elements of a cell
-        cell.profileImageView.image = UIImage(named: "George")
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collection_cell", for: indexPath) as! ProfileCollectionViewCell  //MARK: as! ??
         
+        let beast = InterfaceSpecificData [indexPath.row]
         
-        
+        //set cell element display
+        if let name = beast.name { //MARK: Optional Binding
+            cell.profileNameLabel.text = name
+            cell.profileImageView.image = UIImage (named: name)
+        }
         return cell
+        
     }
     
     //MARK:  Data methods
     
-    func loadUISpecificData () -> [Beast] {
+    func loadInterfaceSpecificData () -> [Beast] {
         
         let chickenNames = ["Charlie",
                             "Dotty",
@@ -73,7 +77,7 @@ class ProfileCollectionViewController: UIViewController, UICollectionViewDelegat
         var Data = [Beast]()
         for chickenName in chickenNames {
             Data.append(Beast (classification: MagnificentChicken, name: chickenName, profilePicture: nil))
-            print (chickenName)
+            //print (chickenName)
         }
         
         return Data
