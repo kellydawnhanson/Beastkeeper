@@ -1,5 +1,4 @@
 # BEASTKEEPER
-Coding Challenge Project for DevFacto Technologies
 
 # "The World's Hottest New Startup is BeastKeeper..."
 
